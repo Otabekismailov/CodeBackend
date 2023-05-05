@@ -9,6 +9,8 @@ class BaseCategoryserializers(serializers.ModelSerializer):
 
 
 class CategorySerializers(serializers.ModelSerializer):
+    id = serializers.IntegerField(read_only=True)
+
     class Meta:
         model = Category
-        fields = ["id", "name", "slug", "basecategory_id"]
+        fields = ["id", "name", "slug", "basecategory"]

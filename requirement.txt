@@ -6,3 +6,4 @@ Pillow==9.5.0
 pyyaml>=3.13
 uritemplate==4.1.1
 django-rest-swagger==2.2.0
+djangorestframework-simplejwt==5.2.2

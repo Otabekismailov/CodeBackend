@@ -30,4 +30,6 @@ urlpatterns = [
     ), name='swagger-ui'),
     path('admin/', admin.site.urls),
     path('', include('curs.urls')),
+    path('account/', include('account.urls')),
+
 ]
