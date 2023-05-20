@@ -9,12 +9,12 @@ from rest_framework.views import APIView
 
 
 class CategoryListView(ListCreateAPIView):
-    lookup_field = 'slug'
+    queryset = Category.objects.all()
     serializer_class = CategorySerializers
 
-    def get_queryset(self):
-        queryset = Category.objects.filter(basecategory__slug=self.kwargs[self.lookup_field])
-        return queryset
+    # def get_queryset(self):
+    #     queryset = Category.objects.filter(basecategory__slug=self.kwargs[self.lookup_field])
+    #     return queryset
 
 
 class CategoryDetailView(RetrieveUpdateDestroyAPIView):

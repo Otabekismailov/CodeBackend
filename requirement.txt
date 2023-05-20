@@ -1,4 +1,4 @@
-Django==4.2
+django==4.2
 django-environ==0.10.0
 djangorestframework==3.14.0
 psycopg2==2.9.6
@@ -7,3 +7,7 @@ pyyaml>=3.13
 uritemplate==4.1.1
 django-rest-swagger==2.2.0
 djangorestframework-simplejwt==5.2.2
+drf-yasg==1.21.5
+dj-rest-auth==4.0.0
+django-factory_boy==1.0.0
+django-filter==23.2

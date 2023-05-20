@@ -9,7 +9,6 @@ class BaseCategoryListView(ListCreateAPIView):
     serializer_class = BaseCategoryserializers
 
 
-
 class BaseCategoryDetail(RetrieveUpdateDestroyAPIView):
     permission_classes = [IsAuthenticated]
     lookup_field = 'slug'
